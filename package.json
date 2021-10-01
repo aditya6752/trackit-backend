@@ -1,0 +1,14 @@
+{
+  "name": "trackit-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aditya6752/trackit-backend.git",
+  "author": "Aditya Niranjan Mishra <aditya.mishra6752@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "nodemon": "^2.0.13"
+  }
+}
