@@ -34,9 +34,11 @@ router.get("/AllTask", function (req, res) {
     }
 });
 
-router.get('/getTaskByDate/:date', async (req, res) => {
+router.get('/getTaskByDate/:date', (req, res) => {
+    // console.log(req.body);
+    // console.log(req.params);
     try {
-        await Task.find({dateOfCompletion:req.body.date}, (err, task) => {
+         Task.find({dateOfCompletion:req.params.date}, (err, task) => {
                 return res.status(200).send(task);
             });
     } catch (err) {
